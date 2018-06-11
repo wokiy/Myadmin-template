@@ -51,9 +51,12 @@
     outline: 0;
 }
 
-.breadcrumbs .radius i{ margin-top:15px; color:#999; font-size:16px}
+.breadcrumbs .radius i{ margin-top:15px; color:#1a6246; font-size:16px}
 .breadcrumbs .left_roll{ left:0px; border-right: solid 1px #ddd;}
 .breadcrumbs .right_roll{ right:120px;border-left: solid 1px #ddd;}
+#js-tabNav-prev:hover{
+    background-color: #16755b;
+}
 .dropdown-menu {
     border: solid 1px #ccc;
     border-top-left-radius: 0px;
