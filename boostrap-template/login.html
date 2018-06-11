@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>博客后台登陆</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<style>
+body{height:100%;background:#092923;overflow:hidden;}
+canvas{z-index:-1;position:absolute;}
+</style>
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript" ></script>
+<script src="js/layer/layer.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/verificationNumbers.js"></script>
+<script src="./js/Particleground.js"></script>
+<script>
+// $(document).ready(function() {
+//   //粒子背景特效
+//   $('body').particleground({
+//     dotColor: '#5cbdaa',
+//     lineColor: '#5cbdaa'
+//   });
+//   //验证码
+//   createCode();
+//   //测试提交，对接程序删除即可
+//   $(".submit_btn").click(function(){
+// 	  location.href="index.html";
+// 	  });
+// });
+</script>
+<style>
+	#wrap {
+		position: relative;
+		width: 400px;
+		height: 380px;
+		margin: 200px auto;
+		
+	}	
+	.login{
+	display: inline-block;
+    position: absolute;
+    top: 189px;
+    left: 50px;
+    width: 300px;
+    height: 50px;
+    background-color: #5cbdaa;
+	}
+	.login span {
+		color: #ffffff;
+		padding-left: 106px;
+		font-size: 18px;
+		line-height: 50px;
+		cursor: pointer;
+	}
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<form  method="post">
+			<dl class="admin_login">
+			 <dt>
+			  <strong>admin后台管理系统</strong>
+			  <em>小程序零售平台</em>
+			 </dt>
+			 <dd class="user_icon">
+			  <input type="text" name="userName" data-name="账号" placeholder="账号" class="login_txtbx"/>
+			 </dd>
+			 <dd class="pwd_icon">
+			  <input type="password" name="password" data-name="密码" placeholder="密码" class="login_txtbx"/>
+			 </dd>
+			 <dd>
+			 </dd>
+			 <dd>
+			 </dd>
+			</dl>
+		</form>
+
+		<div class="login">
+			<span id="login_btn" type="submit" value="立即登陆" class="submit_btn">立即登陆</button>
+		</div>
+	</div>
+
+</body>
+</html>
+<script>
+	$('#login_btn').on('click', function(){
+	   var num=0;
+		 var str="";
+     $("input[type$='text'],input[type$='password']").each(function(n){
+          if($(this).val()=="")
+          {
+               
+			   layer.alert(str+=""+$(this).attr("data-name")+"不能为空！\r\n",{
+                title: '提示框',				
+				icon:0,								
+          }); 
+		    num++;
+            return false;            
+          } 
+		 });
+		  if(num>0){  return false;}	 	
+          else{
+			  layer.alert('登陆成功！',{
+               title: '提示框',				
+			   icon:1,		
+			  });
+	       location.href="shops_index.html";
+			   layer.close(index);	
+		  }		  		     								
+	});
+</script>
