@@ -41,6 +41,7 @@
   <th width="30"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></th>
    <th width="100">产品编号</th>
    <th>产品名称</th>
+   th
    <th width="100">浏览</th>
    <th width="120">产品现价</th>
    <th width="100">分类</th>
@@ -74,10 +75,10 @@
     <tr>
      <td width="30"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
      <td>1</td>
-     <td><img src="../products/ad.jpg"  width="100px" height="80px"/></td>
+     <td><img src="./productw/ad.jpeg"  width="100px" height="80px"/></td>
      <td>450x470</td>
      <td>234KB</td>
-     <td>2016-08-21</td>
+     <td>2018-06-12</td>
      <td>
       <a href="javascript:ovid()">删除</a>
       <a href="javascript:ovid()">修改</a>
@@ -86,10 +87,10 @@
       <tr>
      <td width="30"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
      <td>2</td>
-     <td><img src="../products/p_55.jpg"  width="100px" height="80px"/></td>
+     <td><img src="./productw/ad2.png"  width="100px" height="80px"/></td>
      <td>450x470</td>
      <td>234KB</td>
-     <td>2016-08-21</td>
+     <td>2018-06-12</td>
      <td>
       <a href="javascript:ovid()">删除</a>
       <a href="javascript:ovid()">修改</a>
@@ -109,6 +110,8 @@
 </div>
 </body>
 </html>
+
+
 <script type="text/javascript">
 //设置框架
  $(function() { 
@@ -120,7 +123,7 @@
 });
 $(document).ready(function(){
     var spotMax = 8;
-  if($('#add_Carousel_figure .table tbody tr').size() >= spotMax) {$(obj).hide();}
+  if($("#add_Carousel_figure .table tbody tr").size() >= spotMax) {$(obj).hide();}
   $("#add_Upload").on('click',function(){ 
        var cid =$('.images_Upload').each(function(i){ $(this).attr('id',"Uimages_Upload_"+i)});
        addSpot(this, spotMax, cid);
@@ -143,16 +146,35 @@ function addSpot(obj, sm ,sid) {
 				
   });
   if($('.delete_Upload').size() >= sm) {$(obj).hide();layer.msg('当前为最大图片添加量!',{icon:0,time:1000});}}
+
 var dataSet=[
-    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1233', '贝德玛（Bioderma）温和卸妆水净妍/舒妍洁肤液卸妆水','55','234.50','促销化妆品','4567','2016-03-12 10:34:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,"10001")" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+232+'))" class="btn bg-deep-blue operation_btn">图片</a>'],
-	   ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1563', '欧诗漫 OSM 奢华金萃臻贵娇宠礼盒','55','234.50','促销化妆品','4567','2016-03-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+121+')" class="btn bg-deep-blue operation_btn">图片</a>'],
-	      ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1343', '舒蕾洗发水奢养精油套装','55','234.50','促销化妆品','4567','2016-03-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a>'],
-		       ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1343', '雅芳小黑裙香体乳150g','555','234.50','促销化妆品','4567','2016-03-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+134+')" class="btn bg-deep-blue operation_btn">图片</a>'],
-			        ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1311', '嘉媚乐（CAMENAE）玫瑰之爱保','343','234.50','促销化妆品','4567','2016-03-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+254+')"" class="btn bg-deep-blue operation_btn">图片</a>'],
-	          ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1234', '欧莱雅男士护肤套装 劲能极速活肤液50ml','5445','234.50','新品发布','4567','2016-03-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10023+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a>'],      
-			   ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2016-03-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
-	  
-	  ];			  
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1233', '贝德玛（Bioderma）温和卸妆水净妍/舒妍洁肤液卸妆水','55','234.50','促销化妆品','4567','2018-06-12 10:34:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,"10001")" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+232+'))" class="btn bg-deep-blue operation_btn">图片</a>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1563', '欧诗漫 OSM 奢华金萃臻贵娇宠礼盒','55','234.50','促销化妆品','4567','2019-06-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+121+')" class="btn bg-deep-blue operation_btn">图片</a>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1343', '舒蕾洗发水奢养精油套装','55','234.50','促销化妆品','4567','2018-06-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1343', '雅芳小黑裙香体乳150g','555','234.50','促销化妆品','4567','2018-06-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+134+')" class="btn bg-deep-blue operation_btn">图片</a>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1311', '嘉媚乐（CAMENAE）玫瑰之爱保','343','234.50','促销化妆品','4567','2018-06-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,"123")" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,"10001")" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+254+')"" class="btn bg-deep-blue operation_btn">图片</a>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1234', '欧莱雅男士护肤套装 劲能极速活肤液50ml','5445','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-success label-sm">上架</span>',' <a href="javascript:ovid()" onclick="picture_stop(this,'+10023+')" class="btn bg-green operation_btn">下架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+
+    ['<label><input type="checkbox" class="ace"><span class="lbl"></span></label>','1211', '美即 面膜 净透亮肤套装面膜贴升级版','4555','234.50','新品发布','4567','2018-06-12 12:23:12','<span class="label label-Shelf label-sm">下架</span>','<div class="td-manage"> <a href="javascript:ovid()" onclick="picture_stop(this,'+10001+')" class="btn bg-green operation_btn">上架</a> <a href="javascript:ovid()" onclick="picture_edit(this,'+123+')" class="btn bg-deep-blue operation_btn">修改</a> <a href="javascript:ovid()" onclick="picture_del(this,'+10001+')" class="btn btn-danger operation_btn">删除</a> <a href="javascript:ovid()" onclick="picture_img(this,'+234+')" class="btn bg-deep-blue operation_btn">图片</a></div>'],
+
+
+];
 			jQuery(function($) {
 				var oTable1 = $('#sample-table').dataTable( {
 				"data": dataSet,
