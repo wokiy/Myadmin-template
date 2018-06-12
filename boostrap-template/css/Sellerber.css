@@ -51,11 +51,14 @@
     outline: 0;
 }
 
-.breadcrumbs .radius i{ margin-top:15px; color:#1a6246; font-size:16px}
+.breadcrumbs .radius i{ margin-top:15px; color:#50BCB6; font-size:16px}
 .breadcrumbs .left_roll{ left:0px; border-right: solid 1px #ddd;}
 .breadcrumbs .right_roll{ right:120px;border-left: solid 1px #ddd;}
 #js-tabNav-prev:hover{
-    background-color: #16755b;
+    background-color: #50BCB6;
+}
+#js-tabNav-next:hover{
+    background-color: #50BCB6;
 }
 .dropdown-menu {
     border: solid 1px #ccc;
@@ -189,7 +192,10 @@
 	top:-6px; 
 	left:-6px;
 }
-.Columns_top .news a{ display:block; color: #FFF; padding:11px;}
+.Columns_top .news a{ display:block; color: #FFF; padding:11px;box-shadow: 1px 4px 5px #085651;}
+.Columns_top .news a:hover{
+    background-color: ##3aa29c!important;
+}
 .time_style { margin-top:5px; margin-bottom:5px;}
 .time_style i{ font-size:18px; margin-right:5px;}
 .Columns_top .info-number {
@@ -214,7 +220,7 @@
 	position:relative
 }
 .Columns_top .administrator >.glyph-icon {font-weight: 400!important; font-size:18px; margin-top:8px }
-.Columns_top .administrator{ cursor:pointer; padding:5px 5px;position: relative; margin-top:13px; height:44px; line-height:44px;}
+.Columns_top .administrator{ cursor:pointer; padding:5px 5px;position: relative; margin-top:13px; height:44px; line-height:44px;box-shadow:2px 4px 5px #085651;}
 .Columns_top .administrator > img{
 	margin: 0px 5px 0 0;
     float: left;
@@ -466,7 +472,7 @@
 #index_style .Plate_info{ padding:10px 0px; border:1px solid #dddddd; width:100%; position:relative; z-index:11; background-color:#FFF}
 .Module_info{ vertical-align:middle}
 .Module_info .left_img.bg_color_bule{ background-color:#60A7D0;border-radius: 12px;}
-.Module_info .left_img.bg_color_red{ background-color: #FF7171;border-radius: 12px;}
+.Module_info .left_img.bg_color_red{ background-color:#FF7171;border-radius: 12px;}
 .Module_info .left_img.bg_color_green{ background-color:#9CD159;border-radius: 12px;}
 .Module_info .left_img.bg_color_azure{ background-color:#4EE0BF;border-radius: 12px;}
 .Module_info .left_img.bg_color_orange{ background-color:#FF8E68;border-radius: 12px;}
@@ -475,6 +481,10 @@
 .Module_info .left_img{ width:100px; height:80px;position:absolute;top:0px; left:0px;}
 .Module_info .left_img i{ font-size:36px; margin-top:15px;}
 .Module_info .right_info{position:relative; height:80px; margin-left:100px; vertical-align:middle; top:0px; text-align:center; font-size:24px; line-height:80px;}
+
+
+
+
 /*********************************************************************************************************************************************************
 *                                                                      卖家界面样式属性                                                                     *
 *********************************************************************************************************************************************************/

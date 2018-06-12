@@ -4,3 +4,7 @@
 ### 登陆界面统一这样(个人喜欢vue的绿色,健康。其他可以根据自己口味选择自己的login视图)	
 
 ![boostrap版本](./image/loginpage.png)
+
+### boostrap后台模板界面简洁
+![简洁](./image/admin.png)
+
