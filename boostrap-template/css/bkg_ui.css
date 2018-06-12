@@ -26,7 +26,7 @@
 .padding_none{ padding:0px;}
 .paddings{ padding:5px 10px;}
 .btn.tile-button,
-.btn_Plate.tile-button {display: block;text-align: center; margin:0px 10px;}
+.btn_Plate.tile-button {display: block;text-align: center; margin:0px 10px;border-radius: 12px;}
 .border_style{ border:1px solid #dddddd; padding:10px;}
 .line_height1{ line-height:32px; height:32px;}
 .text-align{ text-align:left}
