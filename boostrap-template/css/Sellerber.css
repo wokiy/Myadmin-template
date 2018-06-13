@@ -301,7 +301,7 @@
 	height:30px; 
 	text-align:center; 
 	line-height:30px; 
-	cursor:pointer; 
+	cursor:pointer;
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffffff',endColorStr='#ededed',gradientType='0');
 	background: -moz-linear-gradient(top, #ffffff, #ededed);
 	background: -o-linear-gradient(top,#ffffff, #ededed);
