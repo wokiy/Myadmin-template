@@ -5,6 +5,7 @@
 ### 登陆界面统一这样(个人喜欢vue的绿色,健康。其他可以根据自己口味选择自己的login视图)
 - Datatables是一款jquery表格插件。它是一个高度灵活的工具，可以将任何HTML表格添加高级的交互功能。分页，即时搜索和排序/{使用者必须知道Datatables怎么使用}
 
+#### login视图
 ![boostrap版本](./image/loginpage.png)
 
 ### boostrap后台模板界面简洁
