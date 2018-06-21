@@ -1,0 +1,11 @@
+{
+  "name": "font",
+  "version": "1.0.0",
+  "description": "- Fiddler使用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jasonlwy",
+  "license": "ISC"
+}
