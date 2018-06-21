@@ -16,8 +16,8 @@
 > 巨人肩膀上的element-ui模板
 
 
-![](http://wx2.sinaimg.cn/mw1024/a8bf8822gy1fsilyt5k14j21kw0t3wfd.jpg) 
+![](.image/aa.png) 
 
-![](http://wx3.sinaimg.cn/mw1024/a8bf8822gy1fsilyt9mv6j21kw0t3jse.jpg)
+![](./image/bbbb.png)
 
 
