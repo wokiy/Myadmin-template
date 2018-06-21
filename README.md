@@ -11,4 +11,10 @@
 ### boostrap后台模板界面简洁
 ![简洁](./image/admin.png)
 
+## element-ui-template通用模板（2018621开始设计初始化）
+- 巨人肩膀上的element-ui模板
+![](http://wx2.sinaimg.cn/mw1024/a8bf8822gy1fsilyt5k14j21kw0t3wfd.jpg) 
+
+![](http://wx3.sinaimg.cn/mw1024/a8bf8822gy1fsilyt9mv6j21kw0t3jse.jpg)
+
 
